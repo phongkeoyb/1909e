@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+
+        a {
+            text-decoration: none;
+        }
+        /**
+        #menu đang chứa các thẻ a
+        hay nói cách khác
+        các thẻ a nằm #menu sẽ chịu ảnh hưởng của đoạn css nằm trong {}
+         */
+        #menu a:link {
+            color: green;
+        }
+        #menu a:visited {
+            color: black;
+        }
+        #menu a:hover {
+            color: orange;
+        }
+        #menu a:active {
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+<pre>
+    a:link là thông thường và link chưa đc người dùng click
+    a:visited là link mà người dùng đã click vào
+    a:hover người dùng đang di chuột vào thẻ a
+    a:active rất ngắn khi người dùng click vào
+</pre>
+    <nav id="menu">
+        <ul>
+            <li>
+                <a href="index7.html"> Trang Chủ </a>
+            </li><li>
+                <a href="#"> Giới Thiệu </a>
+            </li><li>
+                <a href="#"> Tin Tức </a>
+            </li><li>
+                <a href="#"> Liên Hệ </a>
+            </li>
+        </ul>
+    </nav>
+    <div>
+        <a href="https://www.google.com/"> Clíck vào đi đồ ngốc ngếck </a>
+    </div>
+</body>
+</html>

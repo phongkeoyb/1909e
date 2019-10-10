@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        #block1,#block2,#block3,span, a{
+            background-color: aqua;
+            font-size: 18px;
+            display: inline;
+        }
+        #inline1,#inline2,#inline3,h1,p{
+            background-color: yellow;
+            color: red;
+            font-size: 18px;
+                display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1> Nội dung của thẻ H1</h1>
+    <pre>
+
+        - hiển thị block: div, p, section, header, footer, h1->h6
+        - hiển thị inline: a, span, img
+
+        chú ý 1: thẻ div là thẻ tiêu biểu của block (1 khối) ->> luôn chiếm toàn bộ độ rộng sẵn có của thẻ cha
+        chú ý 2: thẻ a là thẻ tiêu biểu của thẻ a (1 hàng) ->> chiếm độ rộng tương đương với nội dung bên trong nó
+
+    </pre>
+    <a> a bê cê đê </a>
+    <div id="block1"> Nội dung của thẻ div 1</div>
+    <div id="block2"> Nội dung của thẻ div 2</div>
+    <div id="block3"> Nội dung của thẻ div 3</div>
+    <p> Tùng ngốc ngếck</p>
+    <a id="inline1" href="#"> Nội Dung của thẻ a</a>
+    <a id="inline2" href="#"> Nội Dung của thẻ a 1</a>
+    <a id="inline3" href="#"> Nội Dung của thẻ a 2</a>
+    <span> A hihi hihi hihi</span>
+</body>
+</html>

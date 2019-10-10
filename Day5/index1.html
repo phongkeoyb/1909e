@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        #ong{
+            font-size: 20px;
+        }
+        #cha{
+            font-size: 10px;
+        }
+        #test1{
+            font-size: 2em;
+        }
+        #test2{
+            font-size: 48px;
+        }
+        #test3{
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        đơn vị tuyệt đối: px(pixel)
+        đơn vị tương đối( thay đổi tùy theo hoàn cảnh): %, em, rem
+
+        Thực hành đơn vị em và pixel:
+        Ở trạng thái bình thường thì 1em = 16px
+        Kết luận:
+        - ở trạng thái mặc định khi thẻ html nằm trực tiếp trong thẻ body hoặc không chịu ảnh hưởng
+        font size của các thẻ bên trên nó thì nó sẽ lấy cái công thức mặc định 1m = 16px.
+        - khi mà 1 thẻ con nằm trong 1 thẻ chả và thẻ cha đc đặt 1 kích cỡ font size cụ thể thì thẻ con đặt đặt 1 kích
+        cỡ theo đơn vị em sẽ lấy công thức font-size của thẻ cha* số em của thẻ con.
+        - khi có từ 3 thẻ lồng nhau trở lên thì thẻ con có đơn vị là em sẽ tìm lên bên trên khi gặp thẻ cấp bên trên nào
+        mà có kích cỡ font-size cụ thể thì nó sẽ lấy font-size quy đổi thành 1em
+        Ví dụ 1:
+        Thẻ cha có font-size là: 20px
+        Thẻ con có font-size là: 2em -> 20*2 = 40px
+
+        Ví dụ 2:
+        Thẻ cha có font-size là: 10px
+        Thẻ con có font-size là: 3em -> 10*3 = 30px
+
+        Ví dụ 3:
+        Thẻ cha có font-size là: 20px
+        Thẻ con có font-size là: 2em -> 20*2 = 40px
+    </pre>
+
+    <div id="ong">
+        <div id="cha">
+            <p id="test1"> Test font style 1</p>
+            <p id="test2"> Test font style 2</p>
+            <p id="test3"> Test font style 3</p>
+        </div>
+    </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+#ahihi{
+    background: black;
+    color: white;
+    font-size: 25px;
+}
+
+h2{
+    background: darkorange;
+    font-size: 35px;
+    color: red;
+    border: 3px solid yellow;
+}
+
+h1{
+    color: yellow;
+    font-size: 50px;
+}
