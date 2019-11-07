@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <button onclick="showInfo('đỏ')"> Chọn mầu đỏ </button>
+    <button onclick="showInfo('xanh')"> Chọn mầu xanh </button>
+    <button onclick="showInfo('vàng')"> Chọn mầu vàng </button>
+    <button onclick="showInfo('đen')"> Chọn mầu đen </button>
+    <button onclick="alert('Bạn chọn nhầm rồi! không hiện mầu đâu')"> Chọn 7 mầu </button>
+    <p id ="result"> </p>
+
+    <script >
+        function showInfo(color) {
+            if (color == "đỏ"){
+                document.getElementById('result').innerHTML = "Bạn muốn in ra mầu đỏ";
+                document.getElementById('result').style.color = "red";
+                document.getElementById('result').style.fontSize = "30px";
+
+            }
+            else if (color == "xanh"){
+                document.getElementById('result').innerHTML = "Bạn muốn in ra mầu xanh";
+                document.getElementById('result').style.color = "green";
+                document.getElementById('result').style.fontSize = "40px";
+            }
+            else if (color == "vàng"){
+                document.getElementById('result').innerHTML = "Bạn muốn in ra mầu vàng";
+                document.getElementById('result').style.color = "yellow";
+                document.getElementById('result').style.fontSize = "50px";
+            } else {
+                document.getElementById('result').innerHTML = "Bạn muốn in ra mầu đen";
+                document.getElementById('result').style.color = "black";
+                document.getElementById('result').style.fontSize = "60px";
+            }
+        }
+    </script>
+</body>
+</html>

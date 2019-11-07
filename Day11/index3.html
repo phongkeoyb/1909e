@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function xettotnghiep1(toan, ly, hoa) {
+            var diem =  toan + ly + hoa;
+            if(toan > 5 && diem > 16 && hoa > 5 && ly > 5){
+                return console.log("đỗ");
+            } else {
+                return console.log("trượt");
+            }
+        }
+        xettotnghiep1(1,2,3);
+        xettotnghiep1(7,8,9);
+        xettotnghiep1(5,5,5);
+
+        function xettotnghiep2(toan, ly, hoa) {
+            var diem =  toan + ly + hoa;
+            if(diem > 16){
+                if (toan < 5 || hoa < 5 || ly < 5){
+                    return console.log("trượt");
+                }
+                else {
+                    return console.log("đỗ");
+                }
+            } else {
+                return console.log("trượt");
+            }
+        }
+        xettotnghiep2(1,2,3);
+        xettotnghiep2(7,8,9);
+        xettotnghiep2(6,9,7);
+    </script>
+</body>
+</html>

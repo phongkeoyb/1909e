@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        alert("Chào javascript");
+        console.log("in ra trong cai cua so");
+        console.log(1+1);
+        var a = 5;
+        var b = 9;
+        var c = a + b;
+        var d = a - b;
+        var e = a * b;
+        var f = a / b;
+        console.log("kết quả của c là: " + c);
+        console.log("kết quả của d là: " + d);
+        console.log("kết quả của e là: " + e);
+        console.log("kết quả của f là: " + f);
+
+        var r =20;
+        function chuvi(r) {
+            var p = r * 3.14;
+            return(p);
+        }
+
+        console.log("chu vi hinh tron la: " + chuvi(r));
+        function dientich(r) {
+            var s = r * r * 3.14;
+            return(s);
+        }
+        console.log("dien tich hinh tron la: " + dientich(r));
+
+        function tuoi(x) {
+            if(x>18){
+                var a = "Bạn đủ tuổi lấy vợ";
+                return a;
+            }else {
+                var b = "Bạn chưa đủ tuổi lấy vợ";
+                return b;
+            }
+        }
+        console.log(tuoi(r));
+        console.log("cac so tu 1 den 20 la: ");
+        function inso1() {
+            var i = 0;
+            for(i ;i < 20;i++){
+                console.log(i);
+            }
+            return i;
+        }
+        console.log(inso1());
+
+        console.log("cac so tu 1 den 20 la: ");
+        function inso1() {
+            var i = 0;
+            while ( i < 20){
+                console.log(i);
+                i++;
+            }
+            return i;
+        }
+        console.log(inso1());
+
+        console.log("cac so chẵn");
+        function insochan1() {
+            var i = 0;
+            for(i ;i < 20;i++){
+                if (i % 2 == 0){
+                    console.log(i);
+                }
+            }
+            return i;
+        }
+        console.log(insochan1());
+
+        console.log("cac so chẵn");
+        function insochan2() {
+            var i = 0;
+            for(i ;i < 20 ;i+=2){
+                console.log(i);
+            }
+            return i;
+        }
+        console.log(insochan2());
+
+        console.log("cac so chẵn");
+        function insochan3() {
+            var i = 0;
+            while (i <= 20){
+                 console.log(i);
+                 i +=2;
+            }
+            return i;
+        }
+        console.log(insochan3());
+
+        console.log("hàm break");
+        function hambreak() {
+            for (var i = 0 ; i < 20 ; i++){
+                if(i == 10){
+                    console.log(i);
+                    break;
+                }
+            }
+            return i;
+        }
+        console.log(hambreak());
+
+        console.log("hàm continue");
+        function hamcontinue() {
+            for (var i = 0 ; i < 20 ; i++){
+                if(i == 10){
+                    console.log(i);
+                    continue;
+                }
+            }
+            return i;
+        }
+        console.log(hamcontinue());
+
+
+
+    </script>
+
+</head>
+<body>
+    <pre>
+        Học cách nhúng js vào trong file html
+        Cách số 1 nhúng trực tiếp js vào html
+        Cửa sổ trong console trong trình duyệt là một cửa sổ quan trong.
+
+    </pre>
+
+
+</body>
+</html>
