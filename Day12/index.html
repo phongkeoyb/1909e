@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function thaydoianh(convat) {
+            if (convat == 'cho'){
+                document.getElementById('anh').style.width= "300px";
+                document.getElementById('anh').style.height= '300px';
+                document.getElementById('anh').src = "../cho.jpg";
+            } else if (convat == 'meo'){
+                document.getElementById('anh').style.width= "350px";
+                document.getElementById('anh').style.height= '350px';
+                document.getElementById('anh').src = "../meo.jpg";
+            } else if (convat == 'lon') {
+                document.getElementById('anh').style.width= "400px";
+                document.getElementById('anh').style.height= '400px';
+                document.getElementById('anh').src = "../lon.jpg";
+            } else if (convat =='ga') {
+                document.getElementById('anh').style.width = "450px";
+                document.getElementById('anh').style.height = '450px';
+                document.getElementById('anh').src = "../ga.jpg";
+            }
+        }
+        </script>
+</head>
+<body>
+    <button onclick="thaydoianh('cho')">Chó</button>
+    <button onclick="thaydoianh('meo')">Mèo</button>
+    <button onclick="thaydoianh('lon')">Lợn</button>
+    <button onclick="thaydoianh('ga')">Gà</button>
+
+    <img src="../cho.jpg" height="450" width="450" id="anh">
+
+</body>
+</html>

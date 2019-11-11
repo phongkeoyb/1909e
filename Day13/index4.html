@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p id="time"></p>
+    <p id="gettime"></p>
+    <div id="tet"></div>
+    <div id="gettet"></div>
+    <div id="sinhnhat"></div>
+    <div id="getsinhnhat"></div>
+    <script type="text/javascript">
+        //Thời gian hiện tại
+        var now = new Date();
+        document.getElementById("time").innerText = now;
+        document.getElementById("gettime").innerText = now.getTime();
+        var tet = new Date(2020,0,1,0,0,0,0);
+        var sinhnhat = new Date(2020,6,0,0,0,0,0);
+        document.getElementById("tet").innerText = tet;
+        document.getElementById("sinhnhat").innerText = sinhnhat;
+    </script>
+</body>
+</html>

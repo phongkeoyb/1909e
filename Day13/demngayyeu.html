@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1> Đếm ngày yêu </h1>
+    <div id="demo"></div>
+    <script>
+        var ago = new Date(2017,8,16,0,0,0,0).getTime();
+
+        var x = setInterval(function() {
+            var now = new Date().getTime();
+            var distance = now - ago;
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            document.getElementById("demo").innerText = days + " ngày "  + hours + " giờ " + minutes +  " phút " +  seconds + " giây" ;
+        }, 1000);
+    </script>
+</body>
+</html>

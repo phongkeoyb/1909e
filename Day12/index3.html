@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        class user{
+            constructor(username, password){
+                this.username = username;
+                this.password = password;
+            }
+            checklogin(){
+                if (this.username == "admin" && this.password == "12345678"){
+                    return true;
+                } return false;
+            }
+        }
+        var abc = new user("admin","12345678");
+        if(abc.checklogin()){
+            alert("đăng nhập thành công");
+        } else alert("đăng nhập thất bại");
+    </script>
+
+    <p id="a"></p>
+</body>
+</html>

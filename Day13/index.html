@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script type="text/javascript">
+        class sinhvien{
+            constructor(ten, tuoi, diachi, diem1, diem2, diem3){
+                this.ten = ten;
+                this.tuoi = tuoi;
+                this.diachi = diachi;
+                this.diem1 = diem1;
+                this.diem2 = diem2;
+                this.diem3 = diem3;
+            }
+            ThongTin(){
+                return "Tên: " + this.ten + "Tuổi: " + this.tuoi + "Địa chỉ: " + this.diachi;
+            }
+            Diem(){
+                return "Điểm 1: " + this.diem1 + "Điểm 2: " + this.diem2 + "Điểm 3: " + this.diem3;
+            }
+            Tinhdiem(){
+                var diemtb = (this.diem1+this.diem2+this.diem3)/3;
+                return diemtb;
+            }
+
+            XepLoai(){
+                if (Tinhdiem() < 5){
+                    return "Yếu";
+                } else if (Tinhdiem() >= 5 && Tinhdiem() <=7.9 ){
+                    return "Khá";
+                } else {
+                    return "Giỏi";
+                }
+            }
+
+        }
+
+        var sv1 = new sinhvien("Le Quoc Phong", 21, "Yen Bai", 10, 9,8);
+        var sv2 = new sinhvien("Lê Quốc Phong", 22, "Yên Bái", 7, 8, 9);
+        var sv3 = new sinhvien("Do Thanh Tung", 21, "Hai Duong", 5, 5 ,5 );
+
+        console.log(sv1);
+        console.log(sv2);
+        console.log(sv3);
+
+        document.getElementById("sv1").innerHTML = sv1.ThongTin();
+        document.getElementById("sv2").innerHTML = sv1.Diem();
+        document.getElementById("sv3").innerHTML = sv1.XepLoai();
+
+        document.getElementById("info").innerText = sinhvien1.thongtin();
+        sinhvien1.tinhdiem();
+        sinhvien1.xeploai();
+        document.getElementById("info2").innerText = "Xếp loại : " + sinhvien1.xeploai;
+    </script>
+
+    <div id="sv1"></div>
+    <div id="sv2"></div>
+    <div id="sv3"></div>
+</body>
+</html>

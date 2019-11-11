@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="info1"></div>
+<div id="info11"></div>
+<div id="info12"></div>
+
+<br>
+<div id="info2"></div>
+<div id="info21"></div>
+<div id="info22"></div>
+
+<br>
+<div id="info3"></div>
+<div id="info31"></div>
+<div id="info32"></div>
+
+<br>
+<div id="info4"></div>
+<div id="info41"></div>
+<div id="info42"></div>
+
+<script type="text/javascript">
+    class SinhVien {
+        constructor(ten, tuoi, quequan, diemtoan, diemly, diemhoa) {
+            this.ten = ten;
+            this.tuoi = tuoi;
+            this.quequan = quequan;
+            this.diemtoan = diemtoan;
+            this.diemly = diemly;
+            this.diemhoa = diemhoa;
+        }
+        // khai báo các thuộc tính cho class này
+        thongtin() {
+            // trong class nếu muốn gọi đến thuộc tính hay phương thức
+            // ta dùng từ khoa this
+            return "Tôi tên là " + this.ten + " " + this.tuoi + " tuổi! Quê quán tại "
+                + this.quequan;
+        }
+
+        diem(){
+            return "Điểm toán: " + this.diemtoan + " Điểm lý: " + this.diemly + " Điểm hóa: " + this.diemhoa;
+        }
+
+        tinhdiem() {
+            return this.diemtongket = (this.diemhoa + this.diemly + this.diemtoan)/3;
+        }
+        xeploai() {
+            if (this.diemtongket < 5) {
+                return this.xeploai = "Kém";
+            } else if(this.diemtongket >= 5 && this.diemtongket <= 6) {
+                return this.xeploai = "Trung bình";
+            } else if(this.diemtongket >= 6.1 && this.diemtongket <= 7.9) {
+                return this.xeploai = "Khá";
+            } else return this.xeploai = "Giỏi"
+        }
+    }
+
+    var sinhvien1 = new SinhVien("Lê Quốc Phong", 21, "Yên Bái", 9,8    ,8);
+    document.getElementById("info1").innerText = sinhvien1.thongtin();
+    document.getElementById("info11").innerText = sinhvien1.diem() + " " +  " =>> Điểm trung bình là: " + sinhvien1.tinhdiem();
+    document.getElementById("info12").innerText = " Đạt xếp loại: " + sinhvien1.xeploai();
+
+    var sinhvien2 = new SinhVien("Đõ Thanh Tùng", 24, "Hải Dương", 7,6,5);
+    document.getElementById("info2").innerText = sinhvien2.thongtin();
+    document.getElementById("info21").innerText = sinhvien2.diem() + " " +  " =>> Điểm trung bình là: " + sinhvien2.tinhdiem();
+    document.getElementById("info22").innerText = " Đạt xếp loại: " + sinhvien2.xeploai();
+
+    var sinhvien3 = new SinhVien("Nguyễn Việt Anh", 25, "Hà Giang", 7,8,7);
+    document.getElementById("info3").innerText = sinhvien3.thongtin();
+    document.getElementById("info31").innerText = sinhvien3.diem() + " " +  " =>> Điểm trung bình là: " + sinhvien3.tinhdiem();
+    document.getElementById("info32").innerText = " Đạt xếp loại: " + sinhvien3.xeploai();
+
+    var sinhvien4 = new SinhVien("Ahihi", 22, "Hải Phòng", 3,4,5);
+    document.getElementById("info4").innerText = sinhvien4.thongtin();
+    document.getElementById("info41").innerText = sinhvien4.diem() + " " +  " =>>Điểm trung bình là: " + sinhvien4.tinhdiem();
+    document.getElementById("info42").innerText = " Đạt xếp loại: " + sinhvien4.xeploai();
+
+
+</script>
+</body>
+</html>
