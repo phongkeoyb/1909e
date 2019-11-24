@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="demo"> Ahihih </div>
+    <a id="btn" href="#">Click đổi màu</a>
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#btn").on("click",function (e) {
+                e.preventDefault();
+                $("#demo").css("color","red");
+            })
+        })
+    </script>
+</body>
+</html>

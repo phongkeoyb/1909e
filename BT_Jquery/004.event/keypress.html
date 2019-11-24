@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .container{
+            background: #ff6423;
+            padding: 20px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <label> Nội dung </label>
+        <textarea name="content" style="width: 80%; height: 40px"></textarea>
+        <p id="count"></p>
+    </div>
+
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous">
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("textarea[name='content']").keypress(function () {
+                var value = $(this).val();
+                console.log(value);
+                $("#count").html('Bạn đã gõ: ' + value.length);
+            })
+        })
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        div{
+            padding: 20px;
+            margin: 20px;
+        }
+
+        #p1{
+            color: red;
+        }
+        .class1{
+            color: cadetblue;
+        }
+
+        input{
+            border: 2px solid red;
+        }
+
+        .row .col{
+            background: violet;
+        }
+
+        .container > .row{
+            border: 3px solid orange;
+        }
+    </style>
+</head>
+<body>
+    <h1> JQUERY SELECTOR </h1>
+    <p id="p1"> Thẻ P id1 </p>
+    <p class="class1"> thẻ P class1</p>
+
+    <form name="login" method="post" action="">
+        <input name="username" value="" type="text">
+        <input name="password" value="" type="password">
+    </form>
+    <section class="container">
+        <section class="row">
+            <section class="col"> Cột 1</section>
+            <section class="col"> Cột 2</section>
+            <section class="col"> Cột 3</section>
+        </section>
+    </section>
+
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous">
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            alert("Trang web đã được load thành công!!!");
+            $("div").css("background","orange");
+            $("#p1").css("background","green");
+            $(".class1").css("background","black");
+            $("input").css("padding","30px");
+            $(".row .col").css("padding","30px");
+            $(".container > .row").css("padding","30px");
+
+
+        })
+    </script>
+</body>
+</html>
